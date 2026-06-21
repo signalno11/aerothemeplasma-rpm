@@ -4,7 +4,7 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           aerothemeplasma-icons
-Version:        6.6.5
+Version:        6.7.0
 Release:        1.git%{shortcommit}%{?dist}
 Summary:        Icon theme designed for AeroThemePlasma
 

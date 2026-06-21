@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 
-%global commit e6a57943d931163281f00f50c352731933086480
+%global commit 148c3c2034feab345b93c12a3295c877faf46f87
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           aeroshell-kwin-components
-Version:        6.6.5
+Version:        6.7.0
 Release:        1.git%{shortcommit}%{?dist}
 Summary:        KWin effects, scripts, and other plugins for AeroShell-based desktops
 
