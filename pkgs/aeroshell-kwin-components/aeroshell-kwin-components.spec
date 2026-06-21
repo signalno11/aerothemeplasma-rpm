@@ -71,6 +71,7 @@ BuildRequires:  qt6-qtwayland-devel
 # Other dependencies
 BuildRequires:  wayland-devel
 BuildRequires:  plasma-wayland-protocols-devel
+BuildRequires:  wayland-protocols-devel
 BuildRequires:  libepoxy-devel
 BuildRequires:  libdrm-devel
 BuildRequires:  polkit-qt6-1-devel 
