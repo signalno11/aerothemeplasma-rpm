@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 
-%global commit b8d5ce100251b74a3a3c5b4a474cb3ff8df11bba
+%global commit 96950b8028a5d960cb683280fe5f1d9e33e6b8a2
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           aerothemeplasma-icons
-Version:        6.6.4
+Version:        6.6.5
 Release:        1.git%{shortcommit}%{?dist}
 Summary:        Icon theme designed for AeroThemePlasma
 

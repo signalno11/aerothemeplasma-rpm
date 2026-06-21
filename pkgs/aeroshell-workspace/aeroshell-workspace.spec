@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 
-%global commit 12313066fbeafb950ad9ac59d98fa4b16a33c85b
+%global commit ea5dfad53b09031b6804124fa3e938ba373bca45
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           aeroshell-workspace
-Version:        6.6.4
+Version:        6.6.5
 Release:        1.git%{shortcommit}%{?dist}
 Summary:        Various components required by AeroShell-based desktops
 
