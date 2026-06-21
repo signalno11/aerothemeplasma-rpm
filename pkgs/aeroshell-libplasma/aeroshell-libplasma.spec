@@ -125,10 +125,10 @@ mkdir -p %{buildroot}%{_kf6_qmldir}/org/kde/private
 %{_libdir}/cmake/PlasmaQuick/
 %{_libdir}/libPlasma.so
 %{_libdir}/libPlasmaQuick.so
-%{_qt6_docdir}/*.tags
  
 %files doc
 %{_qt6_docdir}/*.qch
+%{_qt6_docdir}/*.tags
 
 %changelog
 %autochangelog
