@@ -3,7 +3,7 @@
 %global commit d1c5ad5a1122514996f98ac746681650a8978f8f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
-Name:           libplasma
+Name:           aeroshell-libplasma
 Version:        6.7.0
 Release:        51%{?dist}
 Summary:        Plasma library and runtime components, with AeroShell patches
@@ -62,6 +62,8 @@ Requires:       kf6-filesystem
 	
 Provides:       kf6-plasma = 1:%{version}-%{release}
 Obsoletes:      kf6-plasma < 1:%{version}-%{release}
+Provides:       libplasma = %{version}-%{release}
+Obsoletes:      libplasma < %{version}-%{release}
 
 %description
 Plasma library and runtime components, with AeroShell patches
@@ -76,6 +78,8 @@ Requires:       cmake(KF6KirigamiPlatform)
 Requires:       cmake(KF6WindowSystem)
 Obsoletes:      kf6-plasma-devel < 1:%{version}-%{release}
 Provides:       kf6-plasma-devel = 1:%{version}-%{release}
+Provides:       libplasma-devel = %{version}-%{release}
+Obsoletes:      libplasma-devel < %{version}-%{release}
 %description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
