@@ -49,7 +49,7 @@ BuildRequires:  cmake(PlasmaActivities)
 BuildRequires:  cmake(PlasmaWaylandProtocols)
 BuildRequires:  cmake(Qt6WaylandClient)
 BuildRequires:  pkgconfig(wayland-client)
-BuildRequires: 	pkgconfig(wayland-protocols)
+BuildRequires:  pkgconfig(wayland-protocols)
  
 # autotests
 BuildRequires:  cmake(KF6Archive)
@@ -79,12 +79,6 @@ Provides:       kf6-plasma-devel = 1:%{version}-%{release}
 %description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
- 
-%package        doc
-Summary:        Developer Documentation files for %{name}
-BuildArch:      noarch
-%description    doc
-Developer Documentation files for %{name} for use with KDevelop or QtCreator.
 
 %prep
 %autosetup -n libplasma-%{commit}
@@ -125,10 +119,6 @@ mkdir -p %{buildroot}%{_kf6_qmldir}/org/kde/private
 %{_libdir}/cmake/PlasmaQuick/
 %{_libdir}/libPlasma.so
 %{_libdir}/libPlasmaQuick.so
- 
-%files doc
-%{_qt6_docdir}/*.qch
-%{_qt6_docdir}/*.tags
 
 %changelog
 %autochangelog
