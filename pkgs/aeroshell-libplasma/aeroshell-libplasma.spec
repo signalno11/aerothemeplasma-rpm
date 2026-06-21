@@ -49,6 +49,7 @@ BuildRequires:  cmake(PlasmaActivities)
 BuildRequires:  cmake(PlasmaWaylandProtocols)
 BuildRequires:  cmake(Qt6WaylandClient)
 BuildRequires:  pkgconfig(wayland-client)
+BuildRequires: 	pkgconfig(wayland-protocols)
  
 # autotests
 BuildRequires:  cmake(KF6Archive)
