@@ -100,6 +100,7 @@ mkdir -p %{buildroot}%{_kf6_datadir}/plasma/plasmoids
 mkdir -p %{buildroot}%{_kf6_qmldir}/org/kde/private
 
 %files -f %{name}.lang
+%exclude %{_sourcedir}/aeroshell-libplasma.spec
 %dir %{_kf6_qmldir}/org/
 %dir %{_kf6_qmldir}/org/kde/
 %dir %{_kf6_qmldir}/org/kde/private/
