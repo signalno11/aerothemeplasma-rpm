@@ -3,7 +3,7 @@
 %global commit d1c5ad5a1122514996f98ac746681650a8978f8f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
-Name:           aeroshell-libplasma
+Name:           libplasma
 Version:        6.7.0
 Release:        51%{?dist}
 Summary:        Plasma library and runtime components, with AeroShell patches
