@@ -62,8 +62,6 @@ Requires:       kf6-filesystem
 	
 Provides:       kf6-plasma = 1:%{version}-%{release}
 Obsoletes:      kf6-plasma < 1:%{version}-%{release}
-Provides:       libplasma = %{version}-%{release}
-Obsoletes:      libplasma < %{version}-%{release}
 
 %description
 Plasma library and runtime components, with AeroShell patches
@@ -78,8 +76,6 @@ Requires:       cmake(KF6KirigamiPlatform)
 Requires:       cmake(KF6WindowSystem)
 Obsoletes:      kf6-plasma-devel < 1:%{version}-%{release}
 Provides:       kf6-plasma-devel = 1:%{version}-%{release}
-Provides:       libplasma-devel = %{version}-%{release}
-Obsoletes:      libplasma-devel < %{version}-%{release}
 %description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
@@ -100,7 +96,6 @@ mkdir -p %{buildroot}%{_kf6_datadir}/plasma/plasmoids
 mkdir -p %{buildroot}%{_kf6_qmldir}/org/kde/private
 
 %files -f %{name}.lang
-%exclude %{_sourcedir}/aeroshell-libplasma.spec
 %dir %{_kf6_qmldir}/org/
 %dir %{_kf6_qmldir}/org/kde/
 %dir %{_kf6_qmldir}/org/kde/private/
